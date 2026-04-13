@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1267
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTS_Supermarket", "OTS2019_Supermarket\OTS_Supermarket.csproj", "{07F9AD34-4A8E-4576-9398-EC9512BDB10F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTS_Supermarket.Test", "OTS2019_Supermarket.Test\OTS_Supermarket.Test.csproj", "{01B96C4D-3E02-4291-99B4-393B0B14686E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07F9AD34-4A8E-4576-9398-EC9512BDB10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F9AD34-4A8E-4576-9398-EC9512BDB10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F9AD34-4A8E-4576-9398-EC9512BDB10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F9AD34-4A8E-4576-9398-EC9512BDB10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B96C4D-3E02-4291-99B4-393B0B14686E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B96C4D-3E02-4291-99B4-393B0B14686E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B96C4D-3E02-4291-99B4-393B0B14686E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B96C4D-3E02-4291-99B4-393B0B14686E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9ADB821B-C414-4C17-83AC-AA9491847E32}
+	EndGlobalSection
+EndGlobal
