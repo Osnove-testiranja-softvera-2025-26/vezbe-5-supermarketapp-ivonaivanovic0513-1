@@ -203,6 +203,9 @@ namespace OTS_Supermarket
             Budget = Budget - price;
         }
 
-
+        public void AddOneToCart()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

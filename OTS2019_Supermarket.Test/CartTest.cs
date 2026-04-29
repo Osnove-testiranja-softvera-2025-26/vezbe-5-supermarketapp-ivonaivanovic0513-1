@@ -25,5 +25,42 @@ namespace OTS_Supermarket.Test
 
         }
 
+        [Test]
+        public void Checkout_WithLessThanTenItems_ShouldThrowException()
+        {
+            // ARRANGE
+            Cart cart = new Cart();
+
+            
+            for (int i = 0; i < 9; i++)
+            {
+                cart.AddOneToCart(new Monitor());
+            }
+            // ACT 
+            var ex = Assert.Throws<Exception>(() => cart.Checkout());
+           //ASSERT
+            Assert.That(ex.Message, Is.EqualTo("U korpi se nalaze manje od 10 artikala"));
+        }
+        [Test]
+        public void Checkout_WithMixedItemsLessThanTen_ShouldThrowException()
+        {
+            // ARRANGE
+            Cart cart = new Cart();
+
+            // Dodajemo različite objekte
+            cart.AddOneToCart(new Monitor());
+            cart.AddOneToCart(new Keyboard());
+            cart.AddOneToCart(new Laptop());
+            cart.AddOneToCart(new Computer());
+            cart.AddOneToCart(new Chair());
+            // Ukupno 5 artikala
+
+            // ACT & ASSERT
+            var ex = Assert.Throws<Exception>(() => cart.Checkout());
+
+            // Proveravamo da li je Size ispravno izračunat pre bacanja greške
+            Assert.That(cart.Size, Is.EqualTo(5));
+            Assert.That(ex.Message, Is.EqualTo("U korpi se nalaze manje od 10 artikala"));
+        }
     }
 }
